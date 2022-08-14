@@ -31,7 +31,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
 - Repository URL: [Repository](https://github.com/dportillo23/intro-section-with-dropdown-navigation-main)
 - Live Site URL: [Demo page](https://dportillo23.github.io/intro-section-with-dropdown-navigation-main/)
 
