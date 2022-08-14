@@ -16,7 +16,7 @@ arrows.forEach(arrow => {
     arrow.addEventListener('click', e => {
         const subSectionClasses = e.target.parentElement.lastElementChild.classList
         subSectionClasses.toggle('expanded', !subSectionClasses.contains('expanded'));
-        arrow.src = !subSectionClasses.contains('expanded') ? '../images/icon-arrow-down.svg' : '../images/icon-arrow-up.svg'  
+        arrow.src = !subSectionClasses.contains('expanded') ? './images/icon-arrow-down.svg' : './images/icon-arrow-up.svg'  
 
     })
 })
