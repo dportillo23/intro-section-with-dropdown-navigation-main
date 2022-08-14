@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+<body>
+
+  <!-- <picture style="opacity: 0.5; z-index:-10; position: absolute; top: 0; left: 0; width: 100%;">
+    <source media="(max-width: 640px)" srcset="./design/mobile-design.jpg">
+    <img src="./design/active-states.jpg" alt="">
+  </picture> -->
+
+  <!-- Navigation Bar -->
+  <nav>
+    <img class="logo" src="./images/logo.svg" alt="">
+    <img class="hamburger active" src="./images/icon-menu.svg" alt="">
+
+    
+    <div class="nav--wrapper">
+      <ul class="nav__section nav--about">
+        <li class="nav__item dropdown">Features <img src="./images/icon-arrow-down.svg" alt="arrow-button" class="arrow">
+          <ul class="sub__section">
+            <li class="sub__item"><img src="./images/icon-todo.svg" alt=""> Todo List</li>
+            <li class="sub__item"><img src="./images/icon-calendar.svg" alt=""> Calendar</li>
+            <li class="sub__item"><img src="./images/icon-reminders.svg" alt=""> Reminders</li>
+            <li class="sub__item"><img src="./images/icon-planning.svg
+              " alt=""> Planning</li>
+          </ul>
+        </li>
+        <li class="nav__item dropdown">Company<img src="./images/icon-arrow-down.svg" alt="arrow-button" class="arrow">
+          <ul class="sub__section">
+            <li class="sub__item">History</li>
+            <li class="sub__item">Our Team</li>
+            <li class="sub__item">Blog</li>
+          </ul>
+        </li>
+        <li class="nav__item">Careers</li>
+        <li class="nav__item">About</li>
+      </ul>
+      <ul class="nav__section nav--login">
+        <li class="nav__item">Login</li>
+        <li class="nav__item"><button class="register">Register</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+<section class="hero">
+    <picture class="hero__img">
+      <source media="(max-width: 640px)" srcset="./images/image-hero-mobile.png">
+      <img src="./images/image-hero-desktop.png" alt="Hero">
+    </picture>
+    
+    <div class="wrapper">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.</p>
+        <button class="button learn--more">Learn more</button>
+        <div class="clients">
+          <img src="./images/client-databiz.svg" alt="databiz logo" class="client__img">
+          <img src="./images/client-audiophile.svg" alt="audiophile logo" class="client__img">
+          <img src="./images/client-meet.svg" alt="meet logo" class="client__img">
+          <img src="./images/client-maker.svg" alt="maker logo" class="client__img">
+        </div>
+    </div>
+  </section>
+
+  
+  <!-- Attribution Div -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.danielportillo.dev">Daniel Portillo</a>.
+  </div>
+
+  <script src="./Js/app.js"></script>
+</body>
+</html>

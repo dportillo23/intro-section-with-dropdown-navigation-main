@@ -1,0 +1,134 @@
+@media (min-width: 641px) {
+
+    nav {
+        align-items: center;
+        padding: 1.5% 2% 0 2.5%;
+        gap: 4%;
+    }
+
+    .nav--wrapper {
+        position: relative;
+        clip-path: none;
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav--wrapper::before {
+        content: none;
+    }
+
+    .nav__section {
+        flex-direction: row;
+        align-items: center;
+        gap: 2ch;
+    }
+
+    .nav--about {
+        margin-bottom: 0;
+        flex-basis: 75%;
+    }
+
+    .nav--login {
+        gap: 10%;
+        flex-basis: clamp(10%, 15%, 25%);
+        justify-content: space-between;
+    }
+
+    .nav--login .nav__item:last-child {
+        flex-basis: 55%;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .sub__section {
+        font-size: 0.9rem;
+        /* background-color: var(--col-white); */
+        position: absolute;
+        border-radius: 0.75rem;
+        background-color: var(--col-white);
+        box-shadow: 0.1rem 0.1rem 2rem rgb(0 0 0 / 0.2);
+        width: max-content;
+    }
+
+    .dropdown:first-of-type .sub__section {
+        right: 10%;
+
+    }
+
+    .dropdown + .dropdown .sub__section {
+        left: 5%;
+    }
+
+    .sub__section.expanded {
+        margin-top: 1.5rem;
+        padding: 1rem 1.5rem 1rem 1.5rem;
+    }
+
+    .sub__item:not(:last-child) {
+        margin-bottom: 0.8rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .hero {
+        width: 100%;
+        padding: 5% 10% 0 10%;
+        margin: 0 auto;
+        display: grid;
+        gap: 5%;
+        grid-template-columns: 1fr 0.8fr;
+    }
+
+    .hero__img {
+        grid-column: 2 / 2;
+        grid-row: 1 / span 2;
+    }
+
+    .wrapper {
+        grid-row: 1 / span 2;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 5.7vw, 7rem);
+        margin-bottom: 0.6em;
+        width: 92%;
+    }
+
+    .register:hover {
+        box-shadow: inset clamp(7em, 10vw, 15em) 0 0 var(--col-black);
+    }
+
+
+    .hero p {
+width: 80%;
+font-size: min(1.1rem, 2vw);
+margin-bottom: 3em;
+    }
+
+    .learn--more {
+        width: 10rem;
+    }
+
+    .clients {
+        width: 170%;
+        margin-top: 7.5rem;
+    }
+}
+
+@media (min-width: 1020px) {
+    .clients {
+        width: 80%;    }
+}

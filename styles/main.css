@@ -1,0 +1,102 @@
+:root{
+    --col-white: hsl(0, 0%, 98%);
+    --col-gray: hsl(0, 0%, 41%);
+    --col-black: hsl(0, 0%, 8%);
+}
+
+*,
+*::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hero {
+    width: 100%;
+    text-align: center;
+}
+
+.hero__img { width: 100%;}
+
+.hero__img img {
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.hero h1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin: 1.2em 0 0.8em 0;
+}
+
+.hero p {
+    width: 100%;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+
+button {
+    font-family: inherit;
+    font-size: 1rem;
+
+    border: 1px solid var(--col-black);
+    padding: 0.5rem;
+    border-radius: 0.75em;
+    background-color: transparent;
+    /* overflow: hidden; */
+    position: relative;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+
+
+.learn--more {
+    background-color: var(--col-black);
+    color: var(--col-white);
+    width: 8.5rem;
+    height: 3rem;
+}
+
+.learn--more:hover {
+    box-shadow: inset 10em 0 0 var(--col-white);
+    color: var(--col-black);
+}
+
+.clients {
+    margin-top: 3rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    place-items: center;
+}
+
+.client__img {
+    width: 100%;
+    height: auto;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    width: 100%;
+    margin-top: auto;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
