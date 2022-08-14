@@ -63,8 +63,13 @@ nav {
     gap: 1ch;
 }
 
-.nav--login .nav__item {
+.nav__item {
+    color: var(--col-gray);
     cursor: pointer;
+}
+
+.nav__item:hover {
+    color: var(--col-black);
 }
 
 .register {
